@@ -1,7 +1,6 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { getAsset, getRoutes, projectRoot } from './files.mjs';
-import './inventory.mjs';
 
 for (const route of getRoutes()) {
   const output = resolve(projectRoot, 'dist', route === '/' ? 'index.html' : route.slice(1));

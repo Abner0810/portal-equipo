@@ -1,6 +1,5 @@
 import { createServer } from 'node:http';
 import { getAsset } from './files.mjs';
-import './inventory.mjs';
 
 const host = '127.0.0.1';
 const port = 5173;
